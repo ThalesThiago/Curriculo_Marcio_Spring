@@ -1,5 +1,7 @@
 package com.example.demo.Model;
 
+import jakarta.persistence.*;
+
 @Entity
 @Table(name = "projeto")
 public class Projetos {

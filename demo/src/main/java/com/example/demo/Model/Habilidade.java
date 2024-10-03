@@ -1,5 +1,7 @@
 package com.example.demo.Model;
-import javax.persistence.*;
+
+
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "habilidade")

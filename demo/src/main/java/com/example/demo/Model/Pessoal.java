@@ -1,8 +1,7 @@
 package com.example.demo.Model;
 
-package com.exemplo.curriculo.model;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "pessoal")
