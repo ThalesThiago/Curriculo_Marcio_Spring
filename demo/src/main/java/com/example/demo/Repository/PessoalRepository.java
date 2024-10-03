@@ -1,5 +1,6 @@
-package com.example.demo;
+package com.example.demo.Repository;
 
+import com.example.demo.Model.Pessoal;
 import com.exemplo.curriculo.model.Pessoal;
 import org.springframework.data.jpa.repository.JpaRepository;
 

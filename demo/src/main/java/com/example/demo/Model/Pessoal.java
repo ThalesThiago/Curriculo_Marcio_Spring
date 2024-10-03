@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.Model;
 
 package com.exemplo.curriculo.model;
 

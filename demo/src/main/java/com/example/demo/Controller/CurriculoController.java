@@ -1,3 +1,5 @@
+package com.example.demo.Controller;
+
 import com.exemplo.curriculo.model.Pessoal;
 import com.exemplo.curriculo.repository.PessoalRepository;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,17 +1,14 @@
-package com.example.demo;
-
-
+package com.example.demo.Model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "projeto")
-public class Projeto {
+@Table(name = "bootcamp")
+public class Bootcamp {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nome;
-    private String descricao;
-    private String tecnologias;
+    private String instituicao;
     private String ano;
 
     // Getters e Setters
@@ -33,22 +30,13 @@ public class Projeto {
         this.nome = nome;
     }
 
-    // Getter e Setter para descricao
-    public String getDescricao() {
-        return descricao;
+    // Getter e Setter para instituicao
+    public String getInstituicao() {
+        return instituicao;
     }
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
-
-    // Getter e Setter para tecnologias
-    public String getTecnologias() {
-        return tecnologias;
-    }
-
-    public void setTecnologias(String tecnologias) {
-        this.tecnologias = tecnologias;
+    public void setInstituicao(String instituicao) {
+        this.instituicao = instituicao;
     }
 
     // Getter e Setter para ano
