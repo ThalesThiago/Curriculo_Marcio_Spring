@@ -1,8 +1,8 @@
 package com.example.demo.Controller;
 
 
-import com.example.demo.Model.Pessoal;
-import com.example.demo.Repository.PessoalRepository;
+import com.example.demo.Model.Usuario;
+import com.example.demo.Repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,15 +12,15 @@ import java.util.List;
 @RequestMapping("/api/curriculo")
 public class CurriculoController {
     @Autowired
-    private PessoalRepository pessoalRepository;
+    private UsuarioRepository pessoalRepository;
 
     @GetMapping("/pessoal")
-    public List<Pessoal> getPessoal() {
+    public List<Usuario> getPessoal() {
         return pessoalRepository.findAll();
     }
 
     @PostMapping("/pessoal")
-    public Pessoal createPessoal(@RequestBody Pessoal pessoal) {
+    public Usuario createPessoal(@RequestBody Usuario pessoal) {
         return pessoalRepository.save(pessoal);
     }
 

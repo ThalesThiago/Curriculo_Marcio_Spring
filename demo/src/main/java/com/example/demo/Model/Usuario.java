@@ -3,9 +3,11 @@ package com.example.demo.Model;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
-@Table(name = "pessoal")
-public class Pessoal {
+@Table(name = "usuario")
+public class Usuario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -16,14 +18,23 @@ public class Pessoal {
     private String instagram;
     private String github;
 
+    @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
+    private List<Experiencia> experiencias;
+
+    @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
+    private List<Bootcamp> bootcamps;
+
+    @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
+    private List<Habilidade> habilidades;
+
+    @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
+    private List<Educacao> educacoes;
+
+
     // Getters e Setters
 
     public Long getId() {
         return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     // Getter e Setter para nome

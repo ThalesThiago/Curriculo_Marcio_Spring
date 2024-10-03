@@ -1,6 +1,6 @@
 package com.example.demo.Model;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "experiencia")
@@ -12,6 +12,10 @@ public class Experiencia {
     private String empresa;
     private String periodo;
     private String responsabilidades;
+
+    @ManyToOne
+    @JoinColumn(name = "usuario_id")
+    private Usuario usuario;
 
     // Getters e Setters
 

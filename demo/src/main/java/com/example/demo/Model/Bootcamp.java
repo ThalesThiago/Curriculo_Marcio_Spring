@@ -13,6 +13,10 @@ public class Bootcamp {
     private String instituicao;
     private String ano;
 
+    @ManyToOne
+    @JoinColumn(name = "usuario_id")
+    private Usuario usuario;
+
     // Getters e Setters
 
     public Long getId() {
