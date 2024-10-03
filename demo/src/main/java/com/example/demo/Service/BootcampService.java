@@ -1,11 +1,8 @@
-package com.example.curriculo.Service;
-
-
+package com.example.demo.Service;
 import com.example.demo.Model.Bootcamp;
 import com.example.demo.Repository.BootcampRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PathVariable;
 
@@ -32,7 +29,7 @@ public class BootcampService{
     }
 
     @Transactional
-    public Bootcamp atualizarBootcamo(Long id, Bootcamp bootcampDetalhes) throws Exception {
+    public Bootcamp atualizarBootcamp(Long id, Bootcamp bootcampDetalhes) throws Exception {
         Optional<Bootcamp> bootcamp = bootcampRepository.findById(id);
 
         if (bootcamp.isPresent()) {
