@@ -18,6 +18,3 @@ Abaixo estão as rotas disponíveis na API publicada:
 - **/educacoes**  
 - **/projetos**  
 
-### Exemplo de uso
-
-Para acessar a rota `pessoal` em produção:
