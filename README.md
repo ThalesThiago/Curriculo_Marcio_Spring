@@ -1,7 +1,7 @@
 
 ## API Routes
 
-Abaixo estão as rotas disponíveis na API publicada em produção:
+Abaixo estão as rotas disponíveis na API publicada:
 
 ### Base URL
 
